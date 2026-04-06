@@ -34,10 +34,7 @@ body {
   color: #000;
 }
  
-/* ══════════════════════════════
-   DESKTOP  ≥ 900px
-   A B C en fila — D abajo full
-══════════════════════════════ */
+
 @media (min-width: 900px) {
   .wrapper {
     grid-template-columns: 1fr 1fr 1fr;
@@ -53,11 +50,8 @@ body {
   .block-d { grid-area: d; }
 }
  
-/* ══════════════════════════════
-   TABLET  600px – 899px
-   A+A arriba-izq, D columna derecha
-   B y C abajo-izq
-══════════════════════════════ */
+
+
 @media (min-width: 600px) and (max-width: 899px) {
   .wrapper {
     grid-template-columns: 1fr 1fr 1fr;
@@ -73,10 +67,7 @@ body {
   .block-d { grid-area: d; }
 }
  
-/* ══════════════════════════════
-   MOBILE  < 600px
-   A → B → C → D apilados
-══════════════════════════════ */
+
 @media (max-width: 599px) {
   .wrapper {
     grid-template-columns: 1fr;
